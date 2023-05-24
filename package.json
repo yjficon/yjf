@@ -10,12 +10,14 @@
     "precommit": "lint-staged"
   },
   "husky": {
-    "hooks":{
-      "pre-commit":"lint-staged"
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{
-    "*.js": "eslint"
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint"
+    ]
   },
   "devDependencies": {
     "eslint": "^8.41.0",
