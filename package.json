@@ -11,8 +11,10 @@
   },
   "husky": {
     "hooks":{
-      "pre-commit":"lint-staged"
-    },
+      "pre-commit":"yarn precommit"
+    }
+  },
+  "lint-staged":{
     "*.js": [
       "eslint",
       "git add"
