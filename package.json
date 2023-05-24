@@ -20,7 +20,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.41.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2"
   }
