@@ -1,0 +1,22 @@
+{
+  "name": "yjf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yjficon/yjf.git",
+  "author": "yjf <2028346110@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "eslint ./index.js",
+    "precommit":"lint-staged"
+  },
+  "husky":{
+    "*js":[
+      "eslint",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2"
+  }
+}
