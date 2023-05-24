@@ -11,14 +11,11 @@
   },
   "husky": {
     "hooks":{
-      "pre-commit":"npm run precommit"
+      "pre-commit":"lint-staged"
     }
   },
   "lint-staged":{
-    "*.js": [
-      "eslint",
-      "git add"
-    ]
+    "*.js": "eslint"
   },
   "devDependencies": {
     "eslint": "^8.41.0",
